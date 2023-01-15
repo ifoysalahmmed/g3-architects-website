@@ -330,7 +330,9 @@ main {
         margin-bottom: 50px;
     }
 
-    header {
+    header,
+    main,
+    footer {
         padding: 15px;
     }
 
