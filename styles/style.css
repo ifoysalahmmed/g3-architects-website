@@ -212,13 +212,14 @@ main {
 /* ------------------------------
     some facts styles
 ------------------------------- */
-.some-fact-info{
+.some-fact-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 540px;
     margin-left: 170px;
 }
+
 .facts {
     display: grid;
     grid-template-columns: repeat(4, 200px);
@@ -247,16 +248,18 @@ main {
     font-size: 16px;
     font-weight: 600;
 }
+
 /* ------------------------------
     our values styles
 ------------------------------- */
-.our-values{
+.our-values {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.our-values ul{
+
+.our-values ul {
     display: flex;
     text-align: center;
     gap: 20px;
@@ -265,20 +268,23 @@ main {
     padding: 30px;
     border-radius: 8px;
 }
-.our-values li{
+
+.our-values li {
     list-style: circle;
     color: #FF900E;
     font-weight: 900;
 }
+
 /* ------------------------------
     sponsor styles
 ------------------------------- */
-.sponsor-section{
+.sponsor-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.sponsors{
+
+.sponsors {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -288,11 +294,12 @@ main {
 /* ------------------------------
     footer styles
 ------------------------------- */
-.footer{
+.footer {
     display: flex;
     align-items: center;
 }
-.footer-info{
+
+.footer-info {
     color: #424242;
     font-size: 20px;
     width: 1030px;
@@ -303,7 +310,7 @@ main {
     padding-bottom: 39px;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -311,38 +318,63 @@ main {
     media query styles for mobile device
 ---------------------------------------------- */
 @media only screen and (max-width: 576px) {
-    body{
-        margin: 0 auto;
+    .container{
+        flex-direction: column;
+        margin-bottom: 50px;
     }
-    .section-title{
+    header {
+        padding: 15px;
+    }
+
+    .section-title {
         font-size: 20px;
-        width: 100%;
+        text-align: center;
     }
-    .section-description{
-        width: 100%;
+
+    .section-description {
         font-size: 10px;
+        text-align: center;
     }
+
     .brand-container {
         padding-top: 10px;
     }
-    .navbar{
+
+    .navbar,
+    .menu>.menu-options {
         flex-direction: column;
     }
-    .menu>.menu-options{
-        flex-direction: column;
-    }
-    .menu-options{
+
+    .menu-options {
         font-size: 10px;
         padding-left: 15px;
     }
-    .brand{
+
+    .brand {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .brand-new{
+
+    .brand-new {
         width: auto;
     }
-    .banner-img img{
+
+    .banner-button, .features, .feature-button {
+        text-align: center;
+    }
+
+    .banner-img img {
         width: 100%;
     }
+    .features-img, .facts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+    }
+    .some-fact-info{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+
 }
