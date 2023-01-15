@@ -232,6 +232,7 @@ main {
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 25px;
+    transition: width 1s, height 1s, transform 1s;
 }
 
 .fact img {
@@ -247,6 +248,12 @@ main {
 .fact .icon-description {
     font-size: 16px;
     font-weight: 600;
+}
+
+.fact:hover {
+    border: 5px solid orangered;
+    border-radius: 8px;
+    padding: 25px;
 }
 
 /* ------------------------------
