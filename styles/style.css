@@ -318,10 +318,11 @@ main {
     media query styles for mobile device
 ---------------------------------------------- */
 @media only screen and (max-width: 576px) {
-    .container{
+    .container {
         flex-direction: column;
         margin-bottom: 50px;
     }
+
     header {
         padding: 15px;
     }
@@ -341,7 +342,9 @@ main {
     }
 
     .navbar,
-    .menu>.menu-options {
+    .menu>.menu-options,
+    .our-values ul,
+    .sponsors {
         flex-direction: column;
     }
 
@@ -359,22 +362,49 @@ main {
         width: auto;
     }
 
-    .banner-button, .features, .feature-button {
+    .banner-button,
+    .features,
+    .feature-button {
         text-align: center;
     }
 
-    .banner-img img {
+    .banner-img img,
+    .love-enjoy-features,
+    .love-enjoy-img img,
+    .our-values ul,
+    .footer-info {
         width: 100%;
     }
-    .features-img, .facts {
+
+    .features-img,
+    .facts {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 15px;
     }
-    .some-fact-info{
+
+    #love-feature-btn {
+        text-align: center;
+        margin-top: 10px;
+        top: 0;
+        left: 0;
+    }
+
+    .some-fact-info {
         width: 100%;
         margin-left: 0;
+        align-items: normal;
     }
-    
 
+    .our-values ul {
+        background-color: white;
+    }
+
+    .our-values li {
+        list-style: none;
+    }
+
+    .sponsors {
+        margin-top: 20px;
+    }
 }
